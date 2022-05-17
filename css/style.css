@@ -162,3 +162,24 @@ a {
     width: 1110px;
   }
 }
+
+/* Header */
+header {
+  position: absolute;
+  width: 100%;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header__logo {
+  width: 86px;
+  height: 21px;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
