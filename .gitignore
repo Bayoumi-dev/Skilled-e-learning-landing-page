@@ -1,0 +1,4 @@
+/.vscode
+*.fig
+.DS_Store
+.prettierignore
