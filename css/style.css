@@ -46,10 +46,6 @@ h1 {
   font-size: 2.5rem;
   line-height: 1.25;
 }
-h1,
-h3 {
-  color: var(--colors-yankees-blue);
-}
 h2 {
   font-size: 1.5rem;
   line-height: 1.333;
@@ -57,6 +53,15 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
+}
+h1,
+h3 {
+  color: var(--colors-yankees-blue);
+}
+h1,
+h2,
+h3 {
+  font-weight: 800;
 }
 p {
   font-size: 1rem;
@@ -154,7 +159,7 @@ a {
 }
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 892px;
   }
 }
 @media (min-width: 1200px) {
@@ -204,6 +209,7 @@ header {
 }
 .hero__img {
   width: 327px;
+  height: 380px;
   margin-top: 28px;
   align-self: center;
 }
@@ -214,4 +220,65 @@ header {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Courses section */
+.courses {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+.courses__container {
+  padding-bottom: 80px;
+}
+.courses__list {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 11px;
+}
+.courses__heading {
+  background-image: var(--colors-g-magenta-orange);
+  padding: 24px 28px 32px;
+}
+.courses__heading h2 {
+  max-width: 286px;
+}
+.courses__heading,
+.courses__course {
+  max-width: 339px;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+.courses__course {
+  background-color: var(--colors-white);
+  padding: 56px 28px 32px;
+  position: relative;
+}
+.courses__course p {
+  padding: 16px 0 24px;
+}
+.courses__course::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 28px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+}
+.courses__course:first-of-type::before {
+  background-image: url(../assets/icon-animation.svg);
+}
+.courses__course:nth-of-type(2)::before {
+  background-image: url(../assets/icon-design.svg);
+}
+.courses__course:nth-of-type(3)::before {
+  background-image: url(../assets/icon-photography.svg);
+}
+.courses__course:nth-of-type(4)::before {
+  background-image: url(../assets/icon-crypto.svg);
+}
+.courses__course:last-of-type::before {
+  background-image: url(../assets/icon-business.svg);
 }
