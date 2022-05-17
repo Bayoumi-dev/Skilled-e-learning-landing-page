@@ -168,6 +168,17 @@ a {
   }
 }
 
+/* Logo */
+.logo {
+  width: 86px;
+  height: 21px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Header */
 header {
   position: absolute;
@@ -179,15 +190,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-}
-.header__logo {
-  width: 86px;
-  height: 21px;
-}
-.header__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* Hero section */
@@ -281,4 +283,15 @@ header {
 }
 .courses__course:last-of-type::before {
   background-image: url(../assets/icon-business.svg);
+}
+
+/* Footer */
+footer {
+  background-color: var(--colors-yankees-blue);
+}
+.footer__container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
