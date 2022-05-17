@@ -189,27 +189,29 @@ header {
 .hero {
   padding-top: 80px;
   overflow: hidden;
-
 }
 .hero__container {
   padding-top: 22px;
+  display: flex;
+  flex-direction: column;
 }
-.hero__content {
-}
-.hero__content h2 {
+.hero__content h1 {
+  max-width: 326px;
 }
 .hero__content p {
+  max-width: 400px;
   padding: 26px 0 24px;
 }
 .hero__img {
   width: 327px;
   margin-top: 28px;
+  align-self: center;
 }
 .hero__img img {
-  width: 140%;
+  width: 170%;
   height: 100%;
   object-fit: cover;
   position: relative;
   left: 50%;
-  transform: translateX(-48.5%);
+  transform: translateX(-50%);
 }
