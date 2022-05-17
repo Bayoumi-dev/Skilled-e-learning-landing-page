@@ -167,6 +167,7 @@ a {
 header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 .header__container {
   display: flex;
@@ -182,4 +183,33 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Hero section */
+.hero {
+  padding-top: 80px;
+  overflow: hidden;
+
+}
+.hero__container {
+  padding-top: 22px;
+}
+.hero__content {
+}
+.hero__content h2 {
+}
+.hero__content p {
+  padding: 26px 0 24px;
+}
+.hero__img {
+  width: 327px;
+  margin-top: 28px;
+}
+.hero__img img {
+  width: 140%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-48.5%);
 }
