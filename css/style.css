@@ -325,7 +325,6 @@ header {
 }
 .courses__container {
   padding-bottom: 80px;
-  width: inherit;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -404,7 +403,6 @@ header {
   .courses__container {
     padding-top: 32px;
     padding-bottom: 140px;
-    width: inherit;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
