@@ -150,6 +150,7 @@ a {
 
 /* Links */
 .link {
+  width: fit-content;
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--colors-pink);
